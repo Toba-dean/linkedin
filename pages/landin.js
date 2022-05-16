@@ -17,7 +17,7 @@ const landin = ({ providers }) => {
     <div className="space-y-10 relative">
       <Head>
         <title>LinkedIn</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favi.png" />
       </Head>
 
       <header className="flex justify-around items-center py-4">
