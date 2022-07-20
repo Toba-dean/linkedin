@@ -10,8 +10,8 @@ export const Sidebar = () => {
 
   return (
     <div className="space-y-2 min-w-max max-w-xl">
-      {/* Top */}
 
+      {/* Top */}
       <div className="bg-white dark:bg-[#1D2226] rounded-lg overflow-hidden relative flex flex-col items-center text-center border border-gray-300 dark:border-none">
         <div className="relative w-full h-14">
           <Image src="https://rb.gy/i26zak" layout="fill" priority />
@@ -58,9 +58,9 @@ export const Sidebar = () => {
           </div>
         </div>
       </div>
+      {/* End */}
 
       {/* Bottom */}
-
       <div  className="hidden md:flex bg-white dark:bg-[#1D2226] text-black/70 dark:text-white/75 rounded-lg overflow-hidden flex-col space-y-2 pt-2.5 sticky top-20 border border-gray-300 dark:border-none">
         <p className="sidebarLink">Groups</p>
         <div className="flex items-center justify-between">
@@ -73,6 +73,8 @@ export const Sidebar = () => {
           <h4 className="dark:text-white font-medium text-sm">Discover More</h4>
         </div>
       </div>
+      {/* End */}
+
     </div>
   )
 }

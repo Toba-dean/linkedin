@@ -26,6 +26,7 @@ export const Post = ({ post, modalPost }) => {
   const [liked, setLiked] = useState(false);
   const [handlePost, setHandlePost] = useRecoilState(handlePostState);
 
+  // function to get the ... at te end of a text longer then n number of charters.
   const truncate = (string, n) =>
     string?.length > n ? string.substr(0, n - 1) + "...see more" : string;
 
@@ -68,6 +69,7 @@ export const Post = ({ post, modalPost }) => {
       </div>
 
       {
+        // show the complete input on clicking the <p></p>
         post.input && (
           <div className="px-2.5 break-all md:break-normal">
             {
@@ -84,6 +86,7 @@ export const Post = ({ post, modalPost }) => {
       }
 
       {
+        // show image if there is a image posted
         post.photoUrl && !modalPost && (
           <img
             src={post.photoUrl}
@@ -123,6 +126,7 @@ export const Post = ({ post, modalPost }) => {
         }
 
         {
+          // my post add a delete button. if not put a share button
           session?.user?.email === post.email ? (
             <button
               className="postButton focus:text-red-400"

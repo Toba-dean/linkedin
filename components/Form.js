@@ -12,7 +12,7 @@ const Form = () => {
   const [modalOpen, setModalOpen] = useRecoilState(modalState);
   const [handlePost, setHandlePost] = useRecoilState(handlePostState);
 
-  const uploadPost = async (e) => {
+  const uploadPost = async e => {
     e.preventDefault();
 
    try {
@@ -48,7 +48,7 @@ const Form = () => {
         placeholder="What do you want to talk about?"
         className="bg-transparent focus:outline-none dark:placeholder-white/75"
         value={input}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={e => setInput(e.target.value)}
       />
 
       <input
@@ -56,7 +56,7 @@ const Form = () => {
         placeholder="Add a photo URL (optional)"
         className="bg-transparent focus:outline-none truncate max-w-xs md:max-w-sm dark:placeholder-white/75"
         value={photoUrl}
-        onChange={(e) => setPhotoUrl(e.target.value)}
+        onChange={e => setPhotoUrl(e.target.value)}
       />
 
       <button

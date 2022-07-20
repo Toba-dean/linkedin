@@ -35,6 +35,7 @@ export const Header = () => {
         {
           mounted && (
             <>
+            {/* changing images on light and dark mode */}
               {resolvedTheme === "dark" ? (
                 <Image src="https://rb.gy/bizvqj" width={45} height={45} />
               ) : (

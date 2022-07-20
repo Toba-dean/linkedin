@@ -24,6 +24,7 @@ export const Input = () => {
           src={session?.user?.image}
           className="!h-10 !w-10 cursor-pointer"
         />
+        {/* for the input i used buttons */}
         <motion.button
           whileHover={{ scale: 1.01 }}
           whileTap={{ scale: 0.99 }}

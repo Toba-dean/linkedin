@@ -64,7 +64,7 @@ const Modal = ({ handleClose, type }) => {
     <Backdrop onClick={handleClose}>
       {type === "dropIn" && (
         <motion.div
-          onClick={(e) => e.stopPropagation()}
+          onClick={e => e.stopPropagation()}
           className="rounded-xl flex flex-col justify-center bg-white dark:bg-[#1D2226] w-full max-w-lg md:-mt-96 mx-6"
           variants={dropIn}
           initial="hidden"
@@ -91,7 +91,7 @@ const Modal = ({ handleClose, type }) => {
 
       {type === "gifYouUp" && (
         <motion.div
-          onClick={(e) => e.stopPropagation()}
+          onClick={e => e.stopPropagation()}
           className="rounded-l-lg flex bg-[#1D2226] w-full max-w-6xl -mt-[7vh] mx-6"
           variants={gifYouUp}
           initial="hidden"
