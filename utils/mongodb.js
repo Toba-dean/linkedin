@@ -1,3 +1,5 @@
+// This is how to connect to the mongoDB in Next JS.
+
 import { MongoClient } from "mongodb";
 
 let uri = process.env.MONGODB_URI;

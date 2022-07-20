@@ -4,8 +4,10 @@ import { Timestamp } from "mongodb";
 export default async function handler(req, res) {
   const { method, body } = req;
 
+  // connect to the DB
   const { db } = await connectToDatabase();
 
+  // Get all the post in an array
   if (method === "GET") {
     try {
       const posts = await db
@@ -19,6 +21,7 @@ export default async function handler(req, res) {
     }
   }
 
+  // post all all data to the DB
   if (method === "POST") {
     try {
       const post = await db

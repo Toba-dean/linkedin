@@ -32,7 +32,7 @@ const Feed = ({ posts }) => {
     <div className="space-y-6 pb-24 max-w-xl">
       <Input />
       {
-        // if useSSRPosts === false render the new post else render the post in DB
+        // if useSSRPosts === false render the new data posted else fetch the data from the DB.
         !useSSRPosts ? (
           realtimePosts.map(post => (
             <Post key={post.id} post={post} />
